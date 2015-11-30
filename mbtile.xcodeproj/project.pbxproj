@@ -23,6 +23,9 @@
 		8E7F02D61C05C6AC00CCF7FF /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7F02D11C05C6AC00CCF7FF /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8E7F02D81C05C7B800CCF7FF /* 10.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 8E7F02D71C05C7B800CCF7FF /* 10.mbtiles */; };
 		8E7F02DA1C05CD3B00CCF7FF /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7F02D91C05CD3B00CCF7FF /* libsqlite3.0.dylib */; };
+		8EB3D1A71C0C7E10005264F4 /* Final-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EB3D1A41C0C7E10005264F4 /* Final-1.png */; };
+		8EB3D1A81C0C7E10005264F4 /* Final-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EB3D1A51C0C7E10005264F4 /* Final-2.png */; };
+		8EB3D1A91C0C7E10005264F4 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EB3D1A61C0C7E10005264F4 /* Settings.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		8E7F02D11C05C6AC00CCF7FF /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		8E7F02D71C05C7B800CCF7FF /* 10.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = 10.mbtiles; sourceTree = "<group>"; };
 		8E7F02D91C05CD3B00CCF7FF /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		8EB3D1A41C0C7E10005264F4 /* Final-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Final-1.png"; sourceTree = "<group>"; };
+		8EB3D1A51C0C7E10005264F4 /* Final-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Final-2.png"; sourceTree = "<group>"; };
+		8EB3D1A61C0C7E10005264F4 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Settings.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,9 @@
 		8E7F02751C05AFAD00CCF7FF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8EB3D1A41C0C7E10005264F4 /* Final-1.png */,
+				8EB3D1A51C0C7E10005264F4 /* Final-2.png */,
+				8EB3D1A61C0C7E10005264F4 /* Settings.png */,
 				8E7F02761C05AFAD00CCF7FF /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -255,8 +264,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB3D1A91C0C7E10005264F4 /* Settings.png in Resources */,
 				8E7F02801C05AFAD00CCF7FF /* Main.storyboard in Resources */,
+				8EB3D1A71C0C7E10005264F4 /* Final-1.png in Resources */,
 				8E7F02D81C05C7B800CCF7FF /* 10.mbtiles in Resources */,
+				8EB3D1A81C0C7E10005264F4 /* Final-2.png in Resources */,
 				8E7F02851C05AFAD00CCF7FF /* LaunchScreen.xib in Resources */,
 				8E7F02821C05AFAD00CCF7FF /* Images.xcassets in Resources */,
 			);
@@ -485,6 +497,7 @@
 				8E7F02961C05AFAE00CCF7FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E7F02971C05AFAE00CCF7FF /* Build configuration list for PBXNativeTarget "mbtileTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +506,7 @@
 				8E7F02991C05AFAE00CCF7FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
