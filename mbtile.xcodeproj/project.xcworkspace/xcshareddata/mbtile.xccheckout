@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>4486C071-84B7-4813-AEEB-2C77635AE9DA</string>
 	<key>IDESourceControlProjectName</key>
-	<string>mbtile</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>9D202C3C7ABEC2A1D7F196F6C2A251BF51E8EC8A</key>
 		<string>https://github.com/jjlabella/CustomTileOverlay.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>mbtile.xcodeproj</string>
+	<string>mbtile.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9D202C3C7ABEC2A1D7F196F6C2A251BF51E8EC8A</key>
