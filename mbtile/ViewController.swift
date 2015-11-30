@@ -31,6 +31,12 @@ class ViewController: UIViewController, MKMapViewDelegate {
             longitude: -5.277504
         )
         
+        //SET UP ZOOM
+        let viewRegion : MKCoordinateRegion = MKCoordinateRegionMakeWithDistance(location, 2000, 2000);
+        let adjustedRegion : MKCoordinateRegion = self.mapView.regionThatFits(viewRegion);
+        self.mapView.setRegion(adjustedRegion ,animated:true);
+        self.mapView.showsUserLocation = true;
+        
         var annotation = MKPointAnnotation()
         annotation.coordinate = location
         annotation.title = "POINT"
