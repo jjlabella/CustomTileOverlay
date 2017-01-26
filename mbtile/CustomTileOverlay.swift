@@ -11,30 +11,35 @@ import UIKit
 import MapKit
 
 class CustomTileOverlay : MKTileOverlay {
-    let cache = NSCache()
-    let operationQueue = NSOperationQueue()
+    let cache = NSCache<AnyObject, AnyObject>()
+    let operationQueue = OperationQueue()
     
-    override func URLForTilePath(path: MKTileOverlayPath) -> NSURL {
-        return NSURL(string: String(format: "http://tile.openstreetmap.org/%i/%i/%i.png", path.z, path.x, path.y))!
+    override func url(forTilePath path: MKTileOverlayPath) -> URL {
+        return URL(string: String(format: "http://tile.openstreetmap.org/%i/%i/%i.png", path.z, path.x, path.y))!
         
     }
     
-    override func loadTileAtPath(path: MKTileOverlayPath, result: ((NSData!, NSError!) -> Void)!){
+    
+
+    override func loadTile(at path: MKTileOverlayPath,
+                           result: ((Data?, Error?) -> Void)!) {
+        
+        
         
         //KEY
         let url :String = String(path.x) + "-" + String(path.y) + "-" + String(path.z)
 
         //MAP
-        let tilesURL : NSURL = NSBundle.mainBundle().URLForResource("10", withExtension: "mbtiles")!
-        let tilesDB : MBTilesDB = MBTilesDB(DBURL: tilesURL)
+        let tilesURL : URL = Bundle.main.url(forResource: "10", withExtension: "mbtiles")!
+        let tilesDB : MBTilesDB = MBTilesDB(dburl: tilesURL)
         let zz : NSInteger = path.z
         let xx : NSInteger = path.x
         let yy : NSInteger = path.y
-        println("\(xx) - \(yy) - \(zz)")
-        let tileData = tilesDB.tileForZoomLevel(zz, tileColumn:xx, tileRow: yy)
+        print("\(xx) - \(yy) - \(zz)")
+        let tileData = tilesDB.tile(forZoomLevel: zz, tileColumn:xx, tileRow: yy)
         
         if (tileData != nil){
-            result(tileData, nil)
+            result(tileData as Data?, nil)
         }
     }
     

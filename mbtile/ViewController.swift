@@ -26,7 +26,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         
         //CENTER MAP TO THIS POI
-        var location = CLLocationCoordinate2D(
+        let location = CLLocationCoordinate2D(
             latitude: 37.855027,
             longitude: -5.277504
         )
@@ -37,7 +37,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         self.mapView.setRegion(adjustedRegion ,animated:true);
         self.mapView.showsUserLocation = true;
         
-        var annotation = MKPointAnnotation()
+        let annotation = MKPointAnnotation()
         annotation.coordinate = location
         annotation.title = "POINT"
         annotation.subtitle = "Center Here"
@@ -45,9 +45,9 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         
         //ADDING MY CUSTOM OVERLAY CLASS
-        let overlay = CustomTileOverlay(URLTemplate: template)
+        let overlay = CustomTileOverlay(urlTemplate: template)
         overlay.canReplaceMapContent = true
-        mapView.addOverlay(overlay, level: .AboveLabels)
+        mapView.add(overlay, level: .aboveLabels)
         
         
     }
@@ -61,7 +61,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
     //---------------------------------------------------------------------
     // DELEGATE METHOD FOR EVERLAYS
     //---------------------------------------------------------------------
-    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
 
         let tileOverlay = overlay as? MKTileOverlay
         
@@ -69,7 +69,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
             return MKOverlayRenderer()
         }
         
-        return MKTileOverlayRenderer(tileOverlay: tileOverlay)
+        return MKTileOverlayRenderer(tileOverlay: tileOverlay!)
     }
 
     

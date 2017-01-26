@@ -233,9 +233,12 @@
 				TargetAttributes = {
 					8E7F02711C05AFAD00CCF7FF = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 3R3B69BA6D;
+						LastSwiftMigration = 0820;
 					};
 					8E7F02891C05AFAE00CCF7FF = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0820;
 						TestTargetID = 8E7F02711C05AFAD00CCF7FF;
 					};
 				};
@@ -426,10 +429,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3R3B69BA6D;
 				INFOPLIST_FILE = mbtile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "mbtile/mbtile-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -437,10 +442,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3R3B69BA6D;
 				INFOPLIST_FILE = mbtile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "mbtile/mbtile-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -459,6 +466,7 @@
 				INFOPLIST_FILE = mbtileTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mbtile.app/mbtile";
 			};
 			name = Debug;
@@ -474,6 +482,7 @@
 				INFOPLIST_FILE = mbtileTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mbtile.app/mbtile";
 			};
 			name = Release;
